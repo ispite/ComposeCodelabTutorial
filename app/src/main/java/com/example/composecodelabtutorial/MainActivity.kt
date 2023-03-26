@@ -33,7 +33,7 @@ private fun MyApp(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun Greeting(name: String) {
+private fun Greeting(name: String) {
     Surface(color = MaterialTheme.colorScheme.primary) {
         Text(text = "Hello $name!", modifier = Modifier.padding(24.dp))
     }
@@ -41,7 +41,7 @@ fun Greeting(name: String) {
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() {
+private fun DefaultPreview() {
     ComposeCodelabTutorialTheme {
         Greeting("Android")
     }
